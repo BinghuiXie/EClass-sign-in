@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EClass sign-in page</title>
+    <link rel="stylesheet" href="EClass sign-in page.css">
+    <script src="../jQuery library/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+           $(".showPw").mouseover(function () {
+               $(".password").attr("type","text");
+           });
+           $(".showPw").mouseleave(function () {
+                $(".password").attr("type","password");
+           });
+           $(".passive").click(function () {
+                $(".passive").addClass("active").removeClass("passive");
+                $(".changeSI").addClass("passive").removeClass("active");
+
+           });
+            $(".changeSI").click(function () {
+                $(".changeSI").addClass("active").removeClass("passive");
+                $(".changeCA").removeClass("active").addClass("passive");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="Sign_in">
+    <div class="headPart">
+        <ul class="headPart_hint">
+            <li class="Sign_in_hint fl"><a href="#" class="active changeSI">登录</a></li>
+            <!--<img src="dot.jpg" height="3" width="3" class="dot fl"/>-->
+            <!--<li><a href="#" class="passive fl changeCA">注册</a></li>-->
+        </ul>
+    </div>
+    <div class="inputBox">
+        <input type="text" placeholder="请输入用户名" class="username" autocomplete="on">
+        <input type="password" placeholder="请输入密码" class="password" autocomplete="on">
+        <img src="显示密码.png" height="15" width="20" class="showPw"/>
+    </div>
+    <div class="options">
+        <ul>
+            <li class="fl options1"><input type="checkbox" class="remeberMe">记住我</li>
+            <li class="problemSolve"><a href="#">登陆遇到问题?</a></li>
+        </ul>
+    </div>
+    <div class="buttonStyle">
+        <button class="sign_in click1">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+        <!--<button class="sign_in click2">注&nbsp;&nbsp;&nbsp;&nbsp;册</button>-->
+    </div>
+    <!--<div class="socialNum">-->
+        <!--<p class="pos">————&nbsp;&nbsp;&nbsp;社 交 账 号 登 录&nbsp;&nbsp;&nbsp;————</p>-->
+        <!--<div class="otherApps fl">-->
+            <!--<img src="微博登录.jpg" height="32" width="32" class="imgPos"/>-->
+            <!--<img src="微信登录.jpg" height="32" width="32" class="imgPos"/>-->
+            <!--<img src="QQ登录.jpg" height="32" width="32" class="imgPos"/>-->
+            <!--<a class="others fr">其它</a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+</body>
+</html>

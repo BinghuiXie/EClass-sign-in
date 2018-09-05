@@ -1,0 +1,6 @@
+body,h1,h2,h3,h4,h5,h6,p,div,button,ul,ol,li,span,img,table,dd,dl,dt,li,form,fieldset{margin: 0px;padding: 0px}
+a{text-decoration: none;color: black}
+img,button{border: none}
+input,select,textarea{outline: none;border-right: none;border-left: none;border-top: none;background:none}
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom: 1;}

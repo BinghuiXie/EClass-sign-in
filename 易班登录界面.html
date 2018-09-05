@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="EClass - sign in_page.css" type="text/css">
+    <link rel="stylesheet" href="EClass - sign in_reset.css">
+    <script src="jQuery library/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".sign_in").click(function () {
+                $(".input1").show(500);
+                $(".create_account").animate({
+                    height:"0",
+                    fontSize: "0"
+                },500);
+                $(".sign_in").animate({
+                    top: "+=100px",
+                });
+            });
+            $(".create_account").click(function () {
+                $(".input2").show(500);
+                $(".sign_in").hide(1);
+                $("img").animate({
+                   height: "0"
+                },300);
+                $(".create_account").animate({
+                    top: "+=20px",
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="sign">
+    <div class="inputBox">
+        <img src="易班logo及易班熊元素/易班熊设计素材/易班熊/超人熊.png" class="EClass_bear"/>
+        <!--登录界面-->
+        <input type="text" placeholder="请输入用户名" class="input1">
+        <input type="password" placeholder="请输入密码" class="input1">
+        <!--注册界面-->
+        <input type="text" placeholder="请输入用户名" class="input2">
+        <input type="text" placeholder="请输入手机号" class="input2">
+        <!--<input type="email" placeholder="请输入邮箱" class="input2">-->
+        <input type="password" placeholder="请输入密码" class="input2">
+        <input type="password" placeholder="再确认一次密码" class="input2">
+    </div>
+    <div class="buttonStyle">
+        <button class="sign_in">Sign in</button>
+        <button class="create_account">Create Account</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/*清除样式*/
+body,img,h1,h2,h3,h4,h5,h6,p,div,input,b,ul,li,ol,button,span,dd,dt,dl{margin: 0;padding: 0}
+img,button{border: none;outline: none}
+a{text-decoration: none;color: black;display: block}
+li{list-style: none}
+input{border: none}
+h1,h2,h3,h4,h5,h6{font-weight: unset}
+.fl{float: left}
+.fr{float: right}
+
+/*样式*/
+body{background: url(登陆背景2.jpg)no-repeat;font-family: 微软雅黑;width: 100%;height: 100%}
+.Sign_in{background-color: #ffffff;width: 28%;height: 500px;
+    position: absolute;margin: 12% 18% 15% 36%;box-shadow: royalblue 3px 3px 15px 3px;border-radius: 8px}
+/*未来想恢复最初的界面（那个有社交登录的界面）的时候，记得把margin改为margin:11.5%*/
+.sign_in{display: block;width: 75%;margin:8% 11.5% 0 11.5%;height: 50px;color: #e6e6e6;
+    line-height: 50px;font-size: 20px;border-radius: 35px;position: relative;background-color: #0e90d2}
+.sign_in:hover{background-color: #d2620b;cursor: pointer;color: black}
+
+/*输入框*/
+input{font-size: 15px;text-indent: 2.5em;width: 85%;height: 45px;line-height: 45px;}
+.inputBox{margin: 16% 0 6% 12%;}
+.remeberMe{width: unset;height: unset;}
+.options{margin: 0 0 5% 12%;color: #999999;font-size: 14px}
+.options1{margin-right: 50%}
+.problemSolve a{color: #999999}
+.problemSolve a:hover{color: #d2620b}
+.username{background: url(登录头像.jpg) left 5% center no-repeat #f8f8f8;}
+.password{background: url(密码锁.jpg) left 5% center no-repeat/*,url(显示密码.png) right 5% center no-repeat*/ #f8f8f8}
+.showPw{margin-left: -9%}
+.showPw:hover{cursor: pointer;opacity: 0.8}
+
+/*headPart*/
+.headPart{padding-bottom: 4%}
+.headPart_hint{margin: 15% 20% 0 /*32%*/38%;font-size: 18px;}
+.Sign_in_hint{/*margin-right: 15%;*/display: block;width: 50%/*23%*/;text-align: center;}
+.active{color: #d3724f;font-weight: bold;border-bottom: #d3724f solid 2px;padding-bottom: 0.6em;margin-left: 9%}
+.passive{color: #999999;margin-left: 9%}
+.dot{margin:6% 0 0 -5%}
+
+/*社交账号登录*/
+/*.pos{text-align: center;margin: 7% 5% 6% 0;font-size: 14px;opacity: 0.5}*/
+/*.otherApps{margin-left: 22%;width: 78%}*/
+/*.imgPos{margin-right: 8%}*/
+/*.imgPos:hover{cursor: pointer;opacity: 0.7}*/
+/*.others{color: #999999;width: auto;margin-right: 31.5%;height: 36px;line-height: 30px}*/
+/*.others:hover{color: #d2620b;cursor: pointer;font-weight: bold}*/
